@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GharSePuja (गृहात् पूजा) | Your Temple. Your Seva. From Home.</title>
+  <meta name="description" content="GharSePuja is a trusted digital gateway to authentic temple services—from live darshan and personalized puja with sankalp to consecrated prasad delivery at your home.">
+  <meta name="keywords" content="online puja, temple puja online, live darshan, temple prasad delivery, personalized sankalp, Kashi Vishwanath, Mahakaleshwar">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="GharSePuja (गृहात् पूजा) — Your Temple. Your Seva. From Home.">
+  <meta property="og:description" content="Digital platform connecting devotees with authentic temple services remotely. Live darshan, personalized sankalp, recordings, and prasad delivery.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Playfair Display, Cinzel, Noto Serif Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Noto+Serif+Devanagari:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP ANNOUNCEMENT BAR
+       ======================================================================== -->
+  <div class="top-announcement" id="topAnnouncement">
+    <span>🪔 <strong>गृहात् पूजा</strong> • Building India’s Trusted Digital Gateway to Temple Seva</span>
+    <span class="desktop-only">•</span>
+    <span>Early Access Phase Open</span>
+    <a href="#early-access">Join Waitlist & Get Priority Pass →</a>
+  </div>
+
+  <!-- ========================================================================
+       NAVBAR
+       ======================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#" class="nav-brand" aria-label="GharSePuja Homepage">
+        <div class="nav-logo-emblem">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <div class="nav-logo-text">
+          <span class="brand-sanskrit">गृहात् पूजा</span>
+          <span class="brand-english">GHARSEPUJA</span>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">Overview</a>
+        <a href="#services" class="nav-link">Darshan & Seva</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#temples" class="nav-link">Temples</a>
+        <a href="#trust" class="nav-link">Verified Seva</a>
+        <a href="#partners" class="nav-link">For Temples</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <div class="mobile-nav-actions" style="margin-top: 14px; display: none; flex-direction: column; gap: 10px;">
+          <a href="#early-access" class="btn btn-primary" style="width: 100%;">Join Early Access Pass</a>
+          <button class="btn btn-secondary open-partner-modal" style="width: 100%;">Partner Your Temple</button>
+        </div>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- NRI Currency Switcher -->
+        <div class="currency-toggle" title="Switch Display Currency (For Devotees & NRIs)">
+          <button class="currency-btn active" data-curr="INR" id="currINR">₹ INR</button>
+          <button class="currency-btn" data-curr="USD" id="currUSD">$ USD</button>
+        </div>
+
+        <!-- Ambient Diya Sound Toggle -->
+        <button class="btn-ambient-diya" id="diyaSoundToggle" title="Toggle peaceful sanctum chime & diya glow">
+          <span>🪔</span> Diya Sound
+        </button>
+
+        <!-- CTA -->
+        <a href="#early-access" class="btn btn-primary btn-sm desktop-only">Get Early Access</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <!-- Left Content Column -->
+      <div class="hero-content">
+        <div class="hero-tagline-hindi">
+          <span class="badge-sanskrit">
+            <span class="deva">ॐ</span> आपकी आस्था, आपके घर तक
+          </span>
+        </div>
+        <h1 class="hero-headline">
+          Your Temple.<br>
+          Your Seva.<br>
+          <span class="gold-highlight">From Home.</span>
+        </h1>
+        <p class="hero-description">
+          Experience live darshan, book personalized temple pujas, recite your sacred sankalp with certified priests, and receive consecrated prasad at your doorstep—wherever life takes you.
+        </p>
+
+        <!-- Action CTAs -->
+        <div class="hero-cta-group">
+          <a href="#popular-seva" class="btn btn-primary btn-lg">
+            <span>Explore Seva & Pujas</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <button class="btn btn-secondary btn-lg open-darshan-modal" id="heroWatchDarshanBtn">
+            <span>▶ Watch Live Darshan Demo</span>
+          </button>
+        </div>
+
+        <!-- Trust Indicators Strip -->
+        <div class="hero-trust-bullets">
+          <div class="hero-trust-item">
+            <span class="icon">✓</span>
+            <span>Personalized Name & Gotra Sankalp</span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="icon">✓</span>
+            <span>Live Stream & Timestamped Recording</span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="icon">✓</span>
+            <span>Doorstep Blessed Prasad Delivery</span>
+          </div>
+          <div class="hero-trust-item">
+            <span class="icon">✓</span>
+            <span>Direct Temple Administration Trust</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual Composition (Storytelling Visual) -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-card-main">
+          <img src="assets/hero_temple_darshan.jpg" alt="Temple to home spiritual connection with glowing diya and majestic temple sanctum" class="hero-card-img" id="heroVisualImg">
+          
+          <div class="hero-image-overlay">
+            <div class="hero-live-badge">
+              <span class="pulse-dot"></span>
+              <span>LIVE DARSHAN • KASHI VISHWANATH</span>
+            </div>
+            <p style="font-size: 0.95rem; font-weight: 600; opacity: 0.95;">
+              Evening Shringar & Ganga Aarti Sanctum Stream
+            </p>
+            <span style="font-size: 0.8rem; color: var(--color-gold-light);">
+              5,420 devotees joining live from 14 countries
+            </span>
+          </div>
+        </div>
+
+        <!-- Floating Interactive Badge 1: Sankalp -->
+        <div class="hero-floating-card floating-sankalp">
+          <div class="floating-card-header">
+            <span>📿</span>
+            <span>Live Sankalp Recitation</span>
+          </div>
+          <div class="floating-card-title">Sharma Family</div>
+          <div class="floating-card-sub">Kashyap Gotra • Bangalore to Varanasi</div>
+        </div>
+
+        <!-- Floating Interactive Badge 2: Prasad -->
+        <div class="hero-floating-card floating-prasad">
+          <div class="floating-card-header">
+            <span>🍱</span>
+            <span>Blessed Prasad</span>
+          </div>
+          <div class="floating-card-title">Dispatched with Care</div>
+          <div class="floating-card-sub">Gangajal & Sealed Dry Prasad</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TRUST STRIP
+       ======================================================================== -->
+  <section class="trust-strip-section" id="trust-strip">
+    <div class="container">
+      <div class="trust-strip-header">
+        Built around trust, transparency, and authentic temple seva
+      </div>
+      <div class="trust-pillars-grid">
+        <div class="trust-pillar-card">
+          <div class="trust-pillar-icon">📿</div>
+          <div class="trust-pillar-content">
+            <h4>Personalized</h4>
+            <p>Every puja recites your Name, Gotra, and custom family sankalp.</p>
+          </div>
+        </div>
+        <div class="trust-pillar-card">
+          <div class="trust-pillar-icon">🎥</div>
+          <div class="trust-pillar-content">
+            <h4>Live Participation</h4>
+            <p>Participate in real-time or watch private HD recordings afterward.</p>
+          </div>
+        </div>
+        <div class="trust-pillar-card">
+          <div class="trust-pillar-icon">🏛️</div>
+          <div class="trust-pillar-content">
+            <h4>Temple Verification</h4>
+            <p>Authentic coordination with certified temple authorities & archakas.</p>
+          </div>
+        </div>
+        <div class="trust-pillar-card">
+          <div class="trust-pillar-icon">📦</div>
+          <div class="trust-pillar-content">
+            <h4>Delivered Pure</h4>
+            <p>Consecrated prasad, holy thread, and Gangajal at your doorstep.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROBLEM SECTION
+       ======================================================================== -->
+  <section class="section-padding problem-section" id="about">
+    <div class="container text-center">
+      <span class="section-tag">Devotion Without Distance</span>
+      <h2 class="section-title">When you can’t reach the temple, we bring the temple closer.</h2>
+      <p class="section-desc">
+        Distance, work schedules, age, or living continents away shouldn’t disconnect you from your faith and sacred rituals.
+      </p>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-icon-wrapper">📍</span>
+          <h3 class="problem-title">Too Far Away</h3>
+          <p class="problem-text">
+            Your ancestral kuldevta or holy dham may be thousands of kilometers away, making weekend visits impossible.
+          </p>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon-wrapper">⏳</span>
+          <h3 class="problem-title">Too Busy</h3>
+          <p class="problem-text">
+            Demanding careers and immediate family commitments leave little time for long-distance pilgrimage travel.
+          </p>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon-wrapper">🌍</span>
+          <h3 class="problem-title">Living Abroad</h3>
+          <p class="problem-text">
+            For global Indians in the US, UK, UAE, or Singapore, staying meaningfully tied to temple traditions is a challenge.
+          </p>
+        </div>
+
+        <div class="problem-card">
+          <span class="problem-icon-wrapper">👴</span>
+          <h3 class="problem-title">Difficult to Travel</h3>
+          <p class="problem-text">
+            Elderly parents or family members with mobility challenges often cannot endure strenuous temple queues.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SERVICES / SOLUTION GRID
+       ======================================================================== -->
+  <section class="section-padding services-section" id="services">
+    <div class="container text-center">
+      <span class="section-tag">Comprehensive Temple Ecosystem</span>
+      <h2 class="section-title">Everything you need for your temple seva.</h2>
+      <p class="section-desc">
+        A seamless digital bridge from your home shrine to India’s most revered spiritual sanctums.
+      </p>
+
+      <!-- Filter Tabs -->
+      <div class="services-filter-tabs">
+        <button class="filter-tab-btn active" data-filter="all">All Offerings</button>
+        <button class="filter-tab-btn" data-filter="core">Core Launch Services</button>
+        <button class="filter-tab-btn" data-filter="upcoming">Upcoming Ecosystem</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Live Darshan -->
+        <div class="service-card" data-category="core">
+          <span class="service-badge-pill status-core">Available Now</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">🛕</div>
+            <h3>Live Darshan</h3>
+            <p>Experience live sanctum darshan from participating temples during auspicious morning, evening, and aarti hours.</p>
+          </div>
+          <a href="#" class="service-action-link open-darshan-modal">Watch Darshan Demo →</a>
+        </div>
+
+        <!-- 2. Puja & Seva -->
+        <div class="service-card" data-category="core">
+          <span class="service-badge-pill status-core">Available Now</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">🪔</div>
+            <h3>Puja & Seva</h3>
+            <p>Book personalized pujas, Abhishek, and Havans performed strictly according to authentic Vedic rites by certified priests.</p>
+          </div>
+          <a href="#popular-seva" class="service-action-link">Explore Pujas →</a>
+        </div>
+
+        <!-- 3. Personalized Sankalp -->
+        <div class="service-card" data-category="core">
+          <span class="service-badge-pill status-core">Available Now</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">📿</div>
+            <h3>Personalized Sankalp</h3>
+            <p>Provide your family's Name, Gotra, Nakshatra, and precise intentions. Verified priests chant your exact details during the ritual.</p>
+          </div>
+          <a href="#sankalp-previewer" class="service-action-link">Try Live Sankalp Preview →</a>
+        </div>
+
+        <!-- 4. Live Stream & Recording -->
+        <div class="service-card" data-category="core">
+          <span class="service-badge-pill status-core">Available Now</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">🎥</div>
+            <h3>Live Participation</h3>
+            <p>Join the live video stream where supported, or receive timestamped HD video recordings and sanctum photos after completion.</p>
+          </div>
+          <a href="#trust" class="service-action-link">View Transparency Specs →</a>
+        </div>
+
+        <!-- 5. Consecrated Prasad -->
+        <div class="service-card" data-category="core">
+          <span class="service-badge-pill status-core">Available Now</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">🍱</div>
+            <h3>Doorstep Prasad</h3>
+            <p>Receive consecrated non-perishable temple sweets, holy Raksha Sutra, sacred vibhuti, and pure Gangajal delivered safely to your address.</p>
+          </div>
+          <a href="#prasad-section" class="service-action-link">Explore Prasad Box →</a>
+        </div>
+
+        <!-- 6. Temple Support & Donations -->
+        <div class="service-card" data-category="upcoming">
+          <span class="service-badge-pill">Pilot Phase</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">🙏</div>
+            <h3>Temple Donations</h3>
+            <p>Support participating temple preservation, Annadanam (free community food), Gaushala seva, and restoration programs directly.</p>
+          </div>
+          <a href="#early-access" class="service-action-link">Learn More →</a>
+        </div>
+
+        <!-- 7. Pandit Services -->
+        <div class="service-card" data-category="upcoming">
+          <span class="service-badge-pill">Planned</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">👨‍🦳</div>
+            <h3>Verified Pandits</h3>
+            <p>Discover and consult certified Vedic archakas for home ceremonies, horoscope matching, and auspicious muhurta planning.</p>
+          </div>
+          <a href="#early-access" class="service-action-link">Join Pandit Waitlist →</a>
+        </div>
+
+        <!-- 8. Festival Seva -->
+        <div class="service-card" data-category="upcoming">
+          <span class="service-badge-pill">Planned</span>
+          <div class="service-card-top">
+            <div class="service-icon-box">✨</div>
+            <h3>Festival Seva</h3>
+            <p>Participate in grand seasonal offerings during Maha Shivratri, Navratri, Ganesh Utsav, and Diwali with thousands of fellow devotees.</p>
+          </div>
+          <a href="#early-access" class="service-action-link">View Festival Calendar →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       INNOVATIVE INTERACTIVE SANKALP PREVIEWER
+       ======================================================================== -->
+  <section class="section-padding sankalp-live-section" id="sankalp-previewer">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Interactive Trust Demonstration</span>
+        <h2 class="section-title">See your sacred Sankalp Patra live.</h2>
+        <p class="section-desc">
+          Test how your devotion is personalized. Enter your family details to see how priests recite your sacred intention.
+        </p>
+      </div>
+
+      <div class="sankalp-layout">
+        <!-- Input Form -->
+        <div class="sankalp-form-card">
+          <h3 style="font-size: 1.4rem; margin-bottom: 20px; color: var(--color-maroon-dark);">
+            Enter Devotee Details
+          </h3>
+          <div class="form-group">
+            <label class="form-label" for="sankalpName">Devotee / Family Name(s)</label>
+            <input type="text" id="sankalpName" class="form-control" value="Anoop & Sunita Sharma" placeholder="e.g. Ramesh Chandra Verma">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sankalpGotra">Family Gotra</label>
+            <input type="text" id="sankalpGotra" class="form-control" value="Kashyap Gotra" placeholder="e.g. Bharadwaj / Kashyap / Vashistha">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sankalpCity">Current Residence & Hometown</label>
+            <input type="text" id="sankalpCity" class="form-control" value="Bangalore (Original: Varanasi)" placeholder="e.g. Fremont, USA (Original: Lucknow)">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sankalpSeva">Desired Temple Seva</label>
+            <select id="sankalpSeva" class="form-control">
+              <option value="kashi" selected>Rudrabhishek Seva • Kashi Vishwanath</option>
+              <option value="mahakal">Bhasma Aarti Seva • Mahakaleshwar Ujjain</option>
+              <option value="satya">Shri Satyanarayan Katha • Home Prosperity</option>
+              <option value="mrityun">Maha Mrityunjaya Jaap • Health & Longevity</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sankalpPurpose">Puja Intention / Occasion</label>
+            <select id="sankalpPurpose" class="form-control">
+              <option value="anniversary" selected>Family Health, Peace & 25th Wedding Anniversary</option>
+              <option value="birthday">Auspicious Birthday Blessings</option>
+              <option value="business">Success in New Business Venture</option>
+              <option value="peace">Navgraha Shanti & Overcoming Obstacles</option>
+            </select>
+          </div>
+
+          <div style="font-size: 0.82rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+            <span>ℹ️</span> 
+            <span>This live preview simulates the exact recitation sheet passed to temple archakas.</span>
+          </div>
+        </div>
+
+        <!-- Live Consecrated Sankalp Certificate Preview -->
+        <div class="sankalp-certificate-preview" id="sankalpCertPreview">
+          <div class="cert-border-outer">
+            <div class="cert-header">
+              <div class="cert-sanskrit-shloka">॥ ॐ तत्सत् श्रीब्रह्मणो द्वितीयप्रहरार्धे ॥</div>
+              <div class="cert-seal">ॐ</div>
+              <h4 style="font-size: 1.35rem; color: var(--color-maroon-dark); margin: 6px 0;">संकल्प पत्र • SANKALP RECORD</h4>
+              <p style="font-size: 0.82rem; color: var(--color-kesari-primary); font-weight: 700;">GHARSEPUJA VERIFIED DIGITAL VAULT</p>
+            </div>
+
+            <div class="cert-details-grid">
+              <div class="cert-item">
+                <label>Devotee Name(s)</label>
+                <div class="value" id="previewDevoteeName">Anoop & Sunita Sharma</div>
+              </div>
+
+              <div class="cert-item">
+                <label>Gotra Recitation</label>
+                <div class="value" id="previewGotra">Kashyap Gotra</div>
+              </div>
+
+              <div class="cert-item">
+                <label>Seva / Temple</label>
+                <div class="value" id="previewSevaTitle">Rudrabhishek Seva • Kashi Vishwanath</div>
+              </div>
+
+              <div class="cert-item">
+                <label>Devotee Location</label>
+                <div class="value" id="previewCity">Bangalore (Original: Varanasi)</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; display: block;">Sankalp Purpose</span>
+              <div class="value" id="previewPurpose" style="font-size: 0.95rem; font-weight: 700; color: var(--color-maroon-dark);">Family Health, Peace & 25th Wedding Anniversary</div>
+            </div>
+
+            <div class="cert-badge-tamper">
+              <span>🔒 Reference: GP-2026-10482</span>
+              <span>✓ Certified Temple Priest Chanted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       HOW IT WORKS
+       ======================================================================== -->
+  <section class="section-padding how-it-works-section" id="how-it-works">
+    <div class="container text-center">
+      <span class="section-tag">Seamless Process</span>
+      <h2 class="section-title">Your seva, made simple.</h2>
+      <p class="section-desc">
+        Four clear, transparent steps connecting your sacred intentions directly to the temple sanctum.
+      </p>
+
+      <div class="steps-stepper-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number-circle">01</div>
+          <h3>Choose</h3>
+          <p>Select your revered temple, the specific seva or puja, and your auspicious date or festival.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number-circle">02</div>
+          <h3>Personalize</h3>
+          <p>Provide your family members' names, Gotra, birth stars, and the sacred purpose of the sankalp.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number-circle">03</div>
+          <h3>Participate</h3>
+          <p>Join the live streaming puja from home, or receive a private high-definition video recording.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number-circle">04</div>
+          <h3>Receive</h3>
+          <p>Get consecrated prasad, sacred thread, vibhuti, and pure Gangajal delivered safely to your home.</p>
+        </div>
+      </div>
+
+      <!-- Real Concrete User Journey (PRD Section 19) -->
+      <div class="real-walkthrough-box text-center">
+        <div class="walkthrough-header">
+          <div style="text-align: left;">
+            <span class="badge-sanskrit" style="margin-bottom: 8px;">Real Devotee Walkthrough</span>
+            <h3 style="font-size: 1.5rem; color: var(--color-maroon-dark);">From your home to Varanasi: Rudrabhishek at Kashi Vishwanath</h3>
+          </div>
+          <a href="#early-access" class="btn btn-primary btn-sm">Experience This Seva</a>
+        </div>
+
+        <div class="walkthrough-timeline">
+          <div class="timeline-item">
+            <div class="timeline-num">STEP 1</div>
+            <div class="timeline-title">Choose Rudrabhishek Seva</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">STEP 2</div>
+            <div class="timeline-title">Enter Family Name & Gotra</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">STEP 3</div>
+            <div class="timeline-title">Select Auspicious Monday Date</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">STEP 4</div>
+            <div class="timeline-title">Join Live Video Stream</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">STEP 5</div>
+            <div class="timeline-title">Receive HD Proof & Photos</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">STEP 6</div>
+            <div class="timeline-title">Consecrated Prasad Arrives</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TEMPLE DISCOVERY SECTION
+       ======================================================================== -->
+  <section class="section-padding temples-section" id="temples">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Spiritual Geography</span>
+        <h2 class="section-title">Discover temples across India.</h2>
+        <p class="section-desc">
+          Experience sacred dhams, Jyotirlingas, and historic shrines through verified digital partnerships.
+        </p>
+        
+        <!-- Search bar -->
+        <div style="max-width: 480px; margin: 28px auto 0;">
+          <input type="text" id="templeSearchInput" class="form-control" placeholder="🔍 Search temple by name, deity, or state...">
+        </div>
+      </div>
+
+      <div class="temple-grid">
+        <!-- Temple 1: Kashi Vishwanath -->
+        <div class="temple-card">
+          <div class="temple-card-image-box">
+            <img src="assets/temple_kashi.jpg" alt="Shri Kashi Vishwanath Temple and sacred Ganges ghats in Varanasi" class="temple-img" loading="lazy">
+            <span class="temple-banner-badge">Jyotirlinga • Uttar Pradesh</span>
+          </div>
+          <div class="temple-card-body">
+            <div>
+              <div class="temple-location">📍 Varanasi, Uttar Pradesh</div>
+              <h3>Shri Kashi Vishwanath</h3>
+              <div class="temple-services-tags">
+                <span class="tag-badge">Live Darshan</span>
+                <span class="tag-badge">Rudrabhishek</span>
+                <span class="tag-badge">Ganga Prasad</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="showToast('Kashi Vishwanath seva details reserved for Early Access members.')">View Available Seva</button>
+          </div>
+        </div>
+
+        <!-- Temple 2: Mahakaleshwar -->
+        <div class="temple-card">
+          <div class="temple-card-image-box">
+            <img src="assets/temple_mahakal.jpg" alt="Shri Mahakaleshwar Jyotirlinga Temple during early morning Bhasma Aarti in Ujjain" class="temple-img" loading="lazy">
+            <span class="temple-banner-badge">Jyotirlinga • Madhya Pradesh</span>
+          </div>
+          <div class="temple-card-body">
+            <div>
+              <div class="temple-location">📍 Ujjain, Madhya Pradesh</div>
+              <h3>Mahakaleshwar Jyotirlinga</h3>
+              <div class="temple-services-tags">
+                <span class="tag-badge">Bhasma Aarti</span>
+                <span class="tag-badge">Maha Puja</span>
+                <span class="tag-badge">Dry Prasad</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="showToast('Mahakaleshwar seva details reserved for Early Access members.')">View Available Seva</button>
+          </div>
+        </div>
+
+        <!-- Temple 3: Somnath -->
+        <div class="temple-card">
+          <div class="temple-card-image-box">
+            <img src="assets/temple_somnath.jpg" alt="Shri Somnath Jyotirlinga shore temple by the Arabian Sea in Gujarat" class="temple-img" loading="lazy">
+            <span class="temple-banner-badge">First Jyotirlinga • Gujarat</span>
+          </div>
+          <div class="temple-card-body">
+            <div>
+              <div class="temple-location">📍 Prabhas Patan, Gujarat</div>
+              <h3>Shri Somnath Jyotirlinga</h3>
+              <div class="temple-services-tags">
+                <span class="tag-badge">Someshwar Puja</span>
+                <span class="tag-badge">Bilva Archana</span>
+                <span class="tag-badge">Prasad</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="showToast('Somnath seva details reserved for Early Access members.')">View Available Seva</button>
+          </div>
+        </div>
+
+        <!-- Temple 4: Jagannath Puri -->
+        <div class="temple-card">
+          <div class="temple-card-image-box">
+            <img src="assets/temple_jagannath.jpg" alt="Shri Jagannath Temple towering stone shikhara in Puri Odisha" class="temple-img" loading="lazy">
+            <span class="temple-banner-badge">Char Dham • Odisha</span>
+          </div>
+          <div class="temple-card-body">
+            <div>
+              <div class="temple-location">📍 Puri, Odisha</div>
+              <h3>Shri Jagannath Temple</h3>
+              <div class="temple-services-tags">
+                <span class="tag-badge">Darshan Stream</span>
+                <span class="tag-badge">Dry Mahaprasad</span>
+                <span class="tag-badge">Seva</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="showToast('Jagannath Puri seva details reserved for Early Access members.')">View Available Seva</button>
+          </div>
+        </div>
+
+        <!-- Temple 5: Siddhivinayak -->
+        <div class="temple-card">
+          <div class="temple-card-image-box">
+            <img src="assets/temple_siddhivinayak.jpg" alt="Shri Siddhivinayak Ganapati Temple Prabhadevi in Mumbai" class="temple-img" loading="lazy">
+            <span class="temple-banner-badge">Siddhipith • Maharashtra</span>
+          </div>
+          <div class="temple-card-body">
+            <div>
+              <div class="temple-location">📍 Prabhadevi, Mumbai</div>
+              <h3>Shri Siddhivinayak Temple</h3>
+              <div class="temple-services-tags">
+                <span class="tag-badge">Ganpati Puja</span>
+                <span class="tag-badge">Modak Prasad</span>
+                <span class="tag-badge">Sankalp</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="showToast('Siddhivinayak seva details reserved for Early Access members.')">View Available Seva</button>
+          </div>
+        </div>
+
+        <!-- Temple 6: Meenakshi Sundareswarar -->
+        <div class="temple-card">
+          <div class="temple-card-image-box">
+            <img src="assets/temple_meenakshi.jpg" alt="Meenakshi Sundareswarar Temple towering colorful Gopuram and Golden Lotus tank in Madurai" class="temple-img" loading="lazy">
+            <span class="temple-banner-badge">Historic Gopuram • Tamil Nadu</span>
+          </div>
+          <div class="temple-card-body">
+            <div>
+              <div class="temple-location">📍 Madurai, Tamil Nadu</div>
+              <h3>Meenakshi Sundareswarar</h3>
+              <div class="temple-services-tags">
+                <span class="tag-badge">Special Archana</span>
+                <span class="tag-badge">Kalyanam Seva</span>
+                <span class="tag-badge">Prasad</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" style="width: 100%;" onclick="showToast('Meenakshi Amman seva details reserved for Early Access members.')">View Available Seva</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 36px; text-align: center; font-size: 0.86rem; color: var(--text-muted);">
+        * Illustrative preview during platform pilot onboarding. GharSePuja only offers services in direct agreement with participating temples.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       POPULAR SEVA SECTION
+       ======================================================================== -->
+  <section class="section-padding" id="popular-seva" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Auspicious Offerings</span>
+        <h2 class="section-title">Popular Seva & Sacred Pujas</h2>
+        <p class="section-desc">
+          Consecrated rituals performed with personalized sankalp, complete transparency, and blessed prasad delivery.
+        </p>
+      </div>
+
+      <div class="popular-seva-grid">
+        <!-- Seva 1 -->
+        <div class="seva-card">
+          <div>
+            <div class="seva-card-header">
+              <span class="seva-deity-tag">Lord Shiva</span>
+              <span class="tag-badge">Most Revered</span>
+            </div>
+            <h3>Rudrabhishek Seva</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Sacred abhishek of holy Shiva Linga with Panchamrit and bilva leaves for peace, health, and negative energy dispelling.
+            </p>
+
+            <div class="seva-card-benefits">
+              <div class="benefit-bullet">✓ Personalized Name & Gotra recitation</div>
+              <div class="benefit-bullet">✓ 45 min Live streaming or HD recording</div>
+              <div class="benefit-bullet">✓ Gangajal, sacred thread & dry prasad</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="seva-pricing-bar">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Indicative Offering</span>
+              <span class="seva-price-amount" data-inr="2,100" data-usd="29">₹2,100</span>
+            </div>
+            <a href="#early-access" class="btn btn-primary" style="width: 100%;">Book Seva Slot</a>
+          </div>
+        </div>
+
+        <!-- Seva 2 -->
+        <div class="seva-card">
+          <div>
+            <div class="seva-card-header">
+              <span class="seva-deity-tag">Lord Shiva</span>
+              <span class="tag-badge">Healing & Ayush</span>
+            </div>
+            <h3>Maha Mrityunjaya Jaap</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Potent Vedic mantra chanting dedicated to overcoming severe illnesses, physical hurdles, and granting long life.
+            </p>
+
+            <div class="seva-card-benefits">
+              <div class="benefit-bullet">✓ 1,250 Mantras chanted by Vedic Pandits</div>
+              <div class="benefit-bullet">✓ Full video timestamped proof</div>
+              <div class="benefit-bullet">✓ Consecrated Bhasma & energized Raksha Sutra</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="seva-pricing-bar">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Indicative Offering</span>
+              <span class="seva-price-amount" data-inr="3,500" data-usd="49">₹3,500</span>
+            </div>
+            <a href="#early-access" class="btn btn-primary" style="width: 100%;">Book Seva Slot</a>
+          </div>
+        </div>
+
+        <!-- Seva 3 -->
+        <div class="seva-card">
+          <div>
+            <div class="seva-card-header">
+              <span class="seva-deity-tag">Lord Vishnu</span>
+              <span class="tag-badge">Family Harmony</span>
+            </div>
+            <h3>Shri Satyanarayan Katha</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Traditional auspicious katha for new home inaugurations, birthdays, anniversaries, and overall family prosperity.
+            </p>
+
+            <div class="seva-card-benefits">
+              <div class="benefit-bullet">✓ Complete five-chapter sacred recitation</div>
+              <div class="benefit-bullet">✓ Live family participation via screen</div>
+              <div class="benefit-bullet">✓ Peda prasad & sacred Panchamrit token</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="seva-pricing-bar">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Indicative Offering</span>
+              <span class="seva-price-amount" data-inr="2,500" data-usd="35">₹2,500</span>
+            </div>
+            <a href="#early-access" class="btn btn-primary" style="width: 100%;">Book Seva Slot</a>
+          </div>
+        </div>
+
+        <!-- Seva 4 -->
+        <div class="seva-card">
+          <div>
+            <div class="seva-card-header">
+              <span class="seva-deity-tag">Planetary Deities</span>
+              <span class="tag-badge">Obstacle Relief</span>
+            </div>
+            <h3>Navgraha Shanti Puja</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Balances adverse planetary influences, mitigating dasha transitions, career setbacks, and health obstacles.
+            </p>
+
+            <div class="seva-card-benefits">
+              <div class="benefit-bullet">✓ Individual 9-planet homa offerings</div>
+              <div class="benefit-bullet">✓ Pandit sankalp video recording</div>
+              <div class="benefit-bullet">✓ Navgraha energized yantra & vibhuti</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="seva-pricing-bar">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Indicative Offering</span>
+              <span class="seva-price-amount" data-inr="3,100" data-usd="42">₹3,100</span>
+            </div>
+            <a href="#early-access" class="btn btn-primary" style="width: 100%;">Book Seva Slot</a>
+          </div>
+        </div>
+
+        <!-- Seva 5 -->
+        <div class="seva-card">
+          <div>
+            <div class="seva-card-header">
+              <span class="seva-deity-tag">Lord Ganesha</span>
+              <span class="tag-badge">Vighnaharta</span>
+            </div>
+            <h3>Sankat Nashan Ganesh Puja</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Invocations to Lord Ganesha to dissolve hurdles before new endeavors, jobs, businesses, or weddings.
+            </p>
+
+            <div class="seva-card-benefits">
+              <div class="benefit-bullet">✓ Modak offerings & Atharvashirsha path</div>
+              <div class="benefit-bullet">✓ Real-time sankalp chanting</div>
+              <div class="benefit-bullet">✓ Modak prasad pack & raksha sutra</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="seva-pricing-bar">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Indicative Offering</span>
+              <span class="seva-price-amount" data-inr="1,800" data-usd="25">₹1,800</span>
+            </div>
+            <a href="#early-access" class="btn btn-primary" style="width: 100%;">Book Seva Slot</a>
+          </div>
+        </div>
+
+        <!-- Seva 6 -->
+        <div class="seva-card">
+          <div>
+            <div class="seva-card-header">
+              <span class="seva-deity-tag">Maa Lakshmi & Kuber</span>
+              <span class="tag-badge">Wealth & Growth</span>
+            </div>
+            <h3>Lakshmi Kuber Puja</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              For business expansion, economic stability, clearing loans, and welcoming perpetual abundance into the household.
+            </p>
+
+            <div class="seva-card-benefits">
+              <div class="benefit-bullet">✓ Shri Suktam recitation & lotus archana</div>
+              <div class="benefit-bullet">✓ HD puja video file for download</div>
+              <div class="benefit-bullet">✓ Energized coin, kuber akshat & prasad</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="seva-pricing-bar">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Indicative Offering</span>
+              <span class="seva-price-amount" data-inr="2,800" data-usd="39">₹2,800</span>
+            </div>
+            <a href="#early-access" class="btn btn-primary" style="width: 100%;">Book Seva Slot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       DOORSTEP PRASAD EXPERIENCE SHOWCASE
+       ======================================================================== -->
+  <section class="section-padding" id="prasad-section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="sankalp-layout">
+        <!-- Visual Column -->
+        <div>
+          <img src="assets/temple_prasad_box.jpg" alt="Authentic premium temple prasad delivery packaging with Gangajal and sacred sweets" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); border: 1px solid var(--border-gold);" id="prasadVisualImg">
+        </div>
+
+        <!-- Text Column -->
+        <div>
+          <span class="section-tag">Pure & Consecrated</span>
+          <h2 class="section-title">Temple Prasad, delivered to your threshold.</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 1.05rem;">
+            Prasad is not just food; it is divine grace. We ensure the sanctity and purity of your prasad through hygienic packaging and swift express logistics.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+            <div style="display: flex; gap: 14px;">
+              <span style="font-size: 1.3rem; color: var(--color-kesari-primary);">🧴</span>
+              <div>
+                <h4 style="font-size: 1rem; color: var(--color-maroon-dark);">Airtight Gangajal & Sacred Vibhuti</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">Sealed brass/leak-proof containers retaining pure holy river water and blessed vibhuti.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px;">
+              <span style="font-size: 1.3rem; color: var(--color-kesari-primary);">🍬</span>
+              <div>
+                <h4 style="font-size: 1rem; color: var(--color-maroon-dark);">Long Shelf-Life Consecrated Sweets</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">Traditional dry fruits, panjiri, or besan laddoos prepared under strict temple hygiene.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px;">
+              <span style="font-size: 1.3rem; color: var(--color-kesari-primary);">🎗️</span>
+              <div>
+                <h4 style="font-size: 1rem; color: var(--color-maroon-dark);">Energized Raksha Sutra Holy Thread</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted);">Blessed Mauli thread sanctified during your specific family sankalp for protective grace.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#early-access" class="btn btn-primary">Join Early Access for Prasad Delivery</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TRUST & VERIFIED SEVA SECTION (PRD Section 22 & 23)
+       ======================================================================== -->
+  <section class="section-padding trust-verification-section" id="trust">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag" style="color: var(--color-gold-light);">Radical Transparency</span>
+        <h2 class="section-title">Your devotion deserves transparency.</h2>
+        <p class="section-desc" style="color: var(--text-light-muted);">
+          When you book a seva remotely, you should know exactly what happened, who conducted it, and how your sankalp was fulfilled.
+        </p>
+      </div>
+
+      <div class="trust-layout">
+        <!-- Left: Trust Principles List -->
+        <div class="trust-points-list">
+          <div class="trust-point-item">
+            <span class="icon">🆔</span>
+            <div>
+              <h4>Unique Seva Booking ID</h4>
+              <p>Every booking receives a reference token tracked from priest assignment to prasad dispatch.</p>
+            </div>
+          </div>
+
+          <div class="trust-point-item">
+            <span class="icon">📜</span>
+            <div>
+              <h4>Recorded Sankalp Pronunciation</h4>
+              <p>Hear your family Gotra and intention clearly chanted in the audio/video record.</p>
+            </div>
+          </div>
+
+          <div class="trust-point-item">
+            <span class="icon">📹</span>
+            <div>
+              <h4>Unedited Video Evidence</h4>
+              <p>Receive high-definition video evidence with timestamp and temple sanctum verification.</p>
+            </div>
+          </div>
+
+          <div class="trust-point-item">
+            <span class="icon">🚚</span>
+            <div>
+              <h4>Tamper-Evident Prasad Tracking</h4>
+              <p>Real-time courier tracking with tamper-proof seal confirmation for ultimate peace of mind.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Verified Seva Digital Card (Visual Prototype) -->
+        <div class="verified-seva-card">
+          <div class="v-card-top">
+            <span class="v-badge-seal">✓ VERIFIED SEVA PROTOCOL</span>
+            <span class="v-booking-id">GP-2026-10482</span>
+          </div>
+
+          <div class="v-data-grid">
+            <div class="v-data-cell">
+              <label>Participating Temple</label>
+              <div class="value">Kashi Vishwanath, Varanasi</div>
+            </div>
+            <div class="v-data-cell">
+              <label>Seva Performed</label>
+              <div class="value">Special Rudrabhishek</div>
+            </div>
+            <div class="v-data-cell">
+              <label>Devotee Sankalp</label>
+              <div class="value">Anoop & Sunita (Kashyap Gotra)</div>
+            </div>
+            <div class="v-data-cell">
+              <label>Fulfillment Status</label>
+              <div class="value" style="color: #15803D;">✓ Consecrated & Completed</div>
+            </div>
+          </div>
+
+          <div class="v-status-checklist">
+            <div class="v-check-item">
+              <span style="color: #15803D;">✓</span>
+              <span>Sankalp recited at 07:15 AM IST by Acharya R. Shastri</span>
+            </div>
+            <div class="v-check-item">
+              <span style="color: #15803D;">✓</span>
+              <span>1080p Video Recording uploaded to private devotee locker</span>
+            </div>
+            <div class="v-check-item">
+              <span style="color: #15803D;">✓</span>
+              <span>Prasad dispatched via BlueDart Air Express (#TRK-98214)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TARGET AUDIENCE & WHO IT IS FOR (PRD Section 24)
+       ======================================================================== -->
+  <section class="section-padding audience-section" id="audience">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Devotion For Everyone</span>
+        <h2 class="section-title">For every devotee, wherever life takes you.</h2>
+        <p class="section-desc">
+          Designed with deep respect for Indian families across generations and continents.
+        </p>
+      </div>
+
+      <div class="audience-showcase-grid">
+        <!-- Devotee Family Image -->
+        <div class="audience-image-box">
+          <img src="assets/devotee_family_darshan.jpg" alt="Multi-generational Indian family participating in sacred temple darshan peacefully at home altar" id="familyDarshanImg">
+        </div>
+
+        <!-- Personas Grid -->
+        <div class="audience-cards-col">
+          <div class="audience-persona-card">
+            <div class="icon">💼</div>
+            <h4>Working Professionals</h4>
+            <p>Maintain your spiritual rhythm even during hectic work weeks and business travel.</p>
+          </div>
+
+          <div class="audience-persona-card">
+            <div class="icon">👨‍👩‍👦</div>
+            <h4>Families & Milestones</h4>
+            <p>Sanctify birthdays, anniversaries, housewarmings, and career moves with temple blessings.</p>
+          </div>
+
+          <div class="audience-persona-card">
+            <div class="icon">👵</div>
+            <h4>Elderly Devotees</h4>
+            <p>Experience the divine solace of darshan and seva without arduous journeys and temple stairs.</p>
+          </div>
+
+          <div class="audience-persona-card">
+            <div class="icon">🌏</div>
+            <h4>Indians Around the World</h4>
+            <p>Preserve ancestral spiritual connections across time zones with effortless ease.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NRI Section Banner (PRD Section 25) -->
+      <div class="nri-global-banner">
+        <div class="nri-content">
+          <span class="badge-sanskrit" style="margin-bottom: 8px;">Global Devotees</span>
+          <h3>Far from India. Never far from your faith.</h3>
+          <p style="color: var(--text-secondary); font-size: 1.05rem;">
+            Whether you reside in the United States, United Kingdom, Canada, Australia, Singapore, or the UAE, GharSePuja bridges the geographical divide with coordinated time-zone broadcasts and international customs-compliant prasad shipping.
+          </p>
+          <div class="nri-flags-strip">
+            <span title="United States">🇺🇸</span>
+            <span title="United Kingdom">🇬🇧</span>
+            <span title="United Arab Emirates">🇦🇪</span>
+            <span title="Canada">🇨🇦</span>
+            <span title="Australia">🇦🇺</span>
+            <span title="Singapore">🇸🇬</span>
+            <span style="font-size: 0.95rem; font-weight: 700; color: var(--color-kesari-primary); margin-left: 10px;">➔ 🇮🇳 Connecting to sacred Temples</span>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <a href="#early-access" class="btn btn-primary btn-lg">Explore International Seva</a>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">* International early-access slots now open</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TEMPLE PARTNER SECTION (PRD Section 26 & 27)
+       ======================================================================== -->
+  <section class="section-padding partners-section" id="partners">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Two-Sided Platform</span>
+        <h2 class="section-title">We work with temples, not around them.</h2>
+        <p class="section-desc">
+          We empower temple administrators with modern digital tools to expand outreach, manage remote seva bookings, and fulfill prasad effortlessly.
+        </p>
+      </div>
+
+      <div class="partner-marketplace-grid">
+        <!-- Interactive Ecosystem Diagram -->
+        <div class="marketplace-diagram">
+          <div class="diagram-hub">
+            <span class="deva">गृहात् पूजा</span>
+            <span style="font-size: 0.72rem; letter-spacing: 0.1em; font-weight: 800; margin-top: 4px;">GHARSEPUJA</span>
+            <span style="font-size: 0.65rem; opacity: 0.85;">Digital Gateway</span>
+          </div>
+
+          <div class="diagram-nodes-row">
+            <div class="diagram-node-box">
+              <h4>🏛️ For Temples</h4>
+              <ul>
+                <li>✓ Global devotee reach</li>
+                <li>✓ Digital seva scheduling</li>
+                <li>✓ Transparent revenue & donation audit</li>
+                <li>✓ Prasad fulfillment logistics</li>
+              </ul>
+            </div>
+
+            <div class="diagram-node-box">
+              <h4>🙏 For Devotees</h4>
+              <ul>
+                <li>✓ Authentic temple connection</li>
+                <li>✓ Verified Name & Gotra Sankalp</li>
+                <li>✓ Secure booking with video proof</li>
+                <li>✓ Consecrated prasad at doorstep</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partnership Pitch & CTA -->
+        <div>
+          <h3 style="font-size: 1.85rem; color: var(--color-maroon-dark); margin-bottom: 16px;">
+            Partner Your Temple With GharSePuja
+          </h3>
+          <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 1.05rem;">
+            Are you a temple trustee, administrator, or representative? Join our pilot partner program to bring your temple's pujas, darshan, and prasad to millions of respectful devotees worldwide while preserving ritual sanctum sanctity.
+          </p>
+
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <button class="btn btn-primary open-partner-modal" id="partnerTempleBtn">
+              <span>Partner Your Temple</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <a href="mailto:partnerships@gharsepuja.com" class="btn btn-secondary">
+              <span>Talk to Founders</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       STARTUP VISION SECTION (PRD Section 28)
+       ======================================================================== -->
+  <section class="section-padding vision-section" id="vision">
+    <div class="container text-center">
+      <span class="section-tag">Long-Term Ambition</span>
+      <h2 class="section-title">More than a puja platform.</h2>
+      <p class="section-desc">
+        We are building the complete digital infrastructure for temple seva—connecting devotees with temples, certified archakas, and sacred experiences across the nation.
+      </p>
+
+      <div class="vision-stack-card">
+        <div class="ecosystem-flow">
+          <div class="eco-pill">LIVE DARSHAN</div>
+          <span class="eco-plus">+</span>
+          <div class="eco-pill">VEDIC PUJA</div>
+          <span class="eco-plus">+</span>
+          <div class="eco-pill">PERSONAL SANKALP</div>
+          <span class="eco-plus">+</span>
+          <div class="eco-pill">PRASAD LOGISTICS</div>
+          <span class="eco-plus">+</span>
+          <div class="eco-pill">TEMPLE DONATIONS</div>
+          <span class="eco-plus">+</span>
+          <div class="eco-pill">PILGRIMAGE ACCESS</div>
+        </div>
+
+        <div style="margin: 24px 0;">
+          <span style="font-size: 1.5rem; color: var(--color-kesari-primary);">↓</span>
+        </div>
+
+        <div class="eco-result-badge">
+          ONE UNIFIED DIGITAL TEMPLE ECOSYSTEM
+        </div>
+
+        <p style="margin-top: 24px; font-size: 0.95rem; color: var(--text-secondary); max-width: 620px; margin-left: auto; margin-right: auto;">
+          Respectful of tradition, powered by modern technology, engineered for trust.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EARLY ACCESS / WAITLIST SECTION (PRD Section 29 & 30)
+       ======================================================================== -->
+  <section class="section-padding early-access-section" id="early-access">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 36px;">
+        <span class="section-tag">Join the Foundation</span>
+        <h2 class="section-title">Be among the first devotees.</h2>
+        <p class="section-desc">
+          We’re onboarding an authentic network of temples and verified archakas. Join our priority access list for early puja bookings and launch updates.
+        </p>
+      </div>
+
+      <div class="waitlist-container">
+        <!-- Tabs -->
+        <div class="waitlist-tabs">
+          <button class="waitlist-tab active" id="waitlistTabDevotee">Devotee Access</button>
+          <button class="waitlist-tab" id="waitlistTabTemple">Temple Administrator</button>
+        </div>
+
+        <!-- Interactive Form -->
+        <form id="waitlistForm">
+          <!-- Devotee Form Fields -->
+          <div id="devoteeFormFields">
+            <div class="form-group">
+              <label class="form-label" for="wlName">Full Name *</label>
+              <input type="text" id="wlName" class="form-control" placeholder="e.g. Radhika Sharma" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="wlEmail">Email Address *</label>
+                <input type="email" id="wlEmail" class="form-control" placeholder="radhika@example.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wlPhone">WhatsApp / Mobile *</label>
+                <input type="tel" id="wlPhone" class="form-control" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="wlCity">Current City & Country</label>
+              <input type="text" id="wlCity" class="form-control" placeholder="e.g. Bangalore, India or San Jose, USA">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">What temple services interest you most?</label>
+              <div class="checkbox-group">
+                <label class="checkbox-item"><input type="checkbox" checked> Live Darshan Broadcasts</label>
+                <label class="checkbox-item"><input type="checkbox" checked> Personalized Puja & Sankalp</label>
+                <label class="checkbox-item"><input type="checkbox" checked> Consecrated Prasad Delivery</label>
+                <label class="checkbox-item"><input type="checkbox"> Special Festival Anushthans</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Temple Administrator Fields (Hidden by default) -->
+          <div id="templeFormFields" style="display: none;">
+            <div class="form-group">
+              <label class="form-label" for="wlTempleName">Temple Name *</label>
+              <input type="text" id="wlTempleName" class="form-control" placeholder="e.g. Shri Siddheshwar Mandir">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="wlTempleLoc">Location / State *</label>
+                <input type="text" id="wlTempleLoc" class="form-control" placeholder="e.g. Haridwar, Uttarakhand">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wlContactPerson">Contact Person & Title *</label>
+                <input type="text" id="wlContactPerson" class="form-control" placeholder="e.g. Pt. Vidyadhar (Head Trustee)">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label class="form-label" for="wlTemplePhone">Official Phone / WhatsApp *</label>
+                <input type="tel" id="wlTemplePhone" class="form-control" placeholder="+91 98765 43210">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="wlTempleEmail">Official Email</label>
+                <input type="email" id="wlTempleEmail" class="form-control" placeholder="trust@temple.org">
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 14px;">
+            <span>Get Priority Access Pass</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+
+        <!-- Confirmation Ticket Result -->
+        <div class="confirmation-card" id="waitlistConfirmation">
+          <div style="font-size: 2.5rem; margin-bottom: 8px;">🙏</div>
+          <h3 style="font-size: 1.6rem; color: var(--color-maroon-dark); margin-bottom: 8px;">
+            You’re on the Priority Devotee List!
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">
+            Namaste <strong id="confirmDevoteeName">Devotee</strong>. Your digital priority token has been minted:
+          </p>
+
+          <div class="ticket-visual">
+            <div style="font-size: 0.8rem; letter-spacing: 0.15em; color: var(--color-gold-light); font-weight: 700; margin-bottom: 6px;">
+              GHARSEPUJA PRIORITY PASS
+            </div>
+            <div class="ticket-number" id="confirmTicketNumber">GP-DEVOTEE-#10842</div>
+            <div style="font-size: 0.85rem; color: #E5C378; margin-top: 8px;">
+              Status: Verified Early Devotee • Priority Notification Active
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a href="#" class="btn btn-secondary btn-sm" id="shareWhatsAppBtn" target="_blank">
+              <span>Share on WhatsApp 💬</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ SECTION (PRD Section 31)
+       ======================================================================== -->
+  <section class="section-padding faq-section" id="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Clarity & Trust</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Honest, transparent answers about our services, sankalp process, and temple partnerships.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Q1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>What is GharSePuja (गृहात् पूजा)?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>GharSePuja is an early-stage digital gateway platform connecting devotees with participating temples across India. We enable devotees to participate in authentic temple services remotely—from live sanctum darshan and personalized puja with proper sankalp to door-delivered blessed prasad.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I really perform a puja without visiting the temple in person?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. In the Vedic tradition, pujas and Havans can be performed on behalf of the devotee by consecrated priests (archakas) via a personalized Sankalp (sacred resolution). By stating your Name, Gotra, and intention, the spiritual merit (phala) of the puja is consecrated directly to you and your family.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How will I know my Name and Gotra were actually included?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Transparency is our highest core value. You receive a timestamped high-definition recording and sanctum photos showing the priest clearly reciting your Name and Gotra during the Sankalp chanting, as well as a verifiable digital certificate with unique reference ID.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I watch the puja live?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Live participation is available for supported pujas and participating temples. You will receive a private, high-security video link to join in real-time from your computer, tablet, or phone, allowing your entire family to follow along.</p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does Prasad delivery work, and will it remain fresh?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>We work with dry, non-perishable consecrated prasad—such as traditional laddoos, dry fruit offerings, sacred vibhuti, holy raksha sutra, and airtight-sealed Gangajal. All prasad is dispatched via express courier immediately after the ritual under rigorous hygienic packaging.</p>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Which temples are currently available on the platform?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>We are currently onboarding selected temple partners across key spiritual centers (such as Varanasi, Ujjain, Gujarat, and Odisha) in phased pilot rollouts. Early access members get first notification as new temple integrations go live.</p>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is GharSePuja affiliated with all temples in India?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p><strong>No.</strong> We do not make unverified claims. Only temples, trusts, and authorized archakas that have officially partnered with GharSePuja are represented on the platform. We work with temples, not around them.</p>
+          </div>
+        </div>
+
+        <!-- Q8 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can devotees living outside India (NRIs) book services?</span>
+            <span class="faq-icon-chevron">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Devotees in the USA, UK, UAE, Canada, and other countries can book pujas, attend live streams according to coordinated timings, and receive customs-compliant holy prasad shipments right to their international addresses.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FINAL HIGH-IMPACT CTA BANNER (PRD Section 32)
+       ======================================================================== -->
+  <section class="final-cta-section" id="final-cta">
+    <div class="container final-cta-content">
+      <span class="badge-sanskrit" style="color: var(--color-gold-shimmer); border-color: rgba(229,195,120,0.3); margin-bottom: 16px;">
+        <span class="deva">ॐ</span> आपकी आस्था, आपके घर तक
+      </span>
+      <h2>Your temple. Your seva.<br>From home.</h2>
+      <p>
+        Stay connected to your sacred traditions, wherever life takes you. Experience the peace of authentic temple rituals today.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 18px; flex-wrap: wrap;">
+        <a href="#popular-seva" class="btn btn-gold btn-lg">Explore Seva & Pujas</a>
+        <a href="#early-access" class="btn btn-secondary btn-lg" style="background: rgba(255,255,255,0.12); color: #FFFFFF; border-color: rgba(255,255,255,0.3);">
+          Join Early Access
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER (PRD Section 33)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="nav-brand">
+            <div class="nav-logo-emblem">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <div class="nav-logo-text">
+              <span class="brand-sanskrit" style="color: var(--color-kesari-light);">गृहात् पूजा</span>
+              <span class="brand-english" style="color: #FFFFFF;">GHARSEPUJA</span>
+            </div>
+          </div>
+          <p>
+            <em>आपकी आस्था, आपके घर तक</em><br>
+            A trusted digital gateway connecting devotees with authentic temple services, live darshan, personalized sankalp, and consecrated prasad.
+          </p>
+        </div>
+
+        <!-- Column 1: Platform -->
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Live Darshan</a></li>
+            <li><a href="#popular-seva">Personalized Puja</a></li>
+            <li><a href="#prasad-section">Temple Prasad</a></li>
+            <li><a href="#temples">Temple Discovery</a></li>
+            <li><a href="#sankalp-previewer">Sankalp Vault</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About GharSePuja</a></li>
+            <li><a href="#vision">Startup Vision</a></li>
+            <li><a href="#partners">Partner With Us</a></li>
+            <li><a href="mailto:contact@gharsepuja.com">Contact Founders</a></li>
+            <li><a href="#early-access">Careers & Advisory</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-col">
+          <h4>Trust & Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">Help Center & FAQ</a></li>
+            <li><a href="#trust">Verified Seva Specs</a></li>
+            <li><a href="#">Cancellation & Refunds</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Community -->
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showToast('Instagram community launch announcement coming soon!'); return false;">Instagram</a></li>
+            <li><a href="#" onclick="showToast('YouTube channel with daily temple darshans launching soon!'); return false;">YouTube</a></li>
+            <li><a href="#" onclick="showToast('LinkedIn page for startup and partnership updates.'); return false;">LinkedIn</a></li>
+            <li><a href="https://wa.me/" target="_blank">WhatsApp Devotee Desk</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Legal & Startup Transparency Disclaimer -->
+      <div class="footer-disclaimer-box">
+        <strong>Trust & Partnership Notice:</strong> GharSePuja (गृहात् पूजा) is an early-stage independent technology platform building digital infrastructure for temple services. We only offer rituals and darshans that are formally agreed upon with participating temple trusts, administrators, or authorized archakas. All temple names and references displayed during early pilot access are for illustrative architectural demonstration.
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 2026 GharSePuja Technologies Pvt. Ltd. All rights reserved.</span>
+        <span>Crafted with devotion for temple seekers worldwide.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODAL 1: LIVE DARSHAN DEMO PLAYER
+       ======================================================================== -->
+  <div class="modal-backdrop" id="darshanModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeDarshanModal" aria-label="Close dialog">✕</button>
+      
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+        <span class="pulse-dot"></span>
+        <span style="font-size: 0.8rem; font-weight: 700; color: #15803D; text-transform: uppercase;">
+          LIVE BROADCAST • KASHI VISHWANATH
+        </span>
+      </div>
+
+      <h3 style="font-size: 1.4rem; color: var(--color-maroon-dark);">
+        Evening Ganga Shringar & Sacred Sanctum Darshan
+      </h3>
+
+      <!-- Stream Mockup -->
+      <div class="darshan-stream-player">
+        <img src="assets/hero_temple_darshan.jpg" alt="Simulated live darshan stream">
+        <div class="stream-controls-bar">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="color: #EF4444; font-weight: 800;">● LIVE</span>
+            <span style="font-size: 0.8rem;"><span id="darshanViewerCount">5,420</span> Devotees Watching</span>
+          </div>
+          <div>
+            <button class="btn btn-gold btn-sm" onclick="playTempleBell(); showToast('🔔 Sacred Temple Bell Chimed!')">
+              Ring Temple Bell 🔔
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Chat Simulation -->
+      <div style="margin-bottom: 12px; font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">
+        Devotee Pranam Stream
+      </div>
+      <div class="stream-chat-box">
+        <div class="chat-bubble"><span class="sender">Sunil K. (Mumbai):</span> <span>Har Har Mahadev! 🙏 Jai Kashi Vishwanath</span></div>
+        <div class="chat-bubble"><span class="sender">Meera Patel (London):</span> <span>Om Namah Shivaya. Feeling so peaceful from London. 🙏✨</span></div>
+        <div class="chat-bubble"><span class="sender">Rajan V. (Bangalore):</span> <span>Divya Darshan! Dhanya ho. 🪔</span></div>
+        <div class="chat-bubble"><span class="sender">Pooja Sharma (Dubai):</span> <span>Har Har Mahadev! Pranam to all. 🙏</span></div>
+      </div>
+
+      <div style="margin-top: 20px; text-align: right;">
+        <a href="#popular-seva" class="btn btn-primary btn-sm" onclick="document.getElementById('darshanModal').classList.remove('show');">
+          Book Personal Rudrabhishek Seva →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: TEMPLE PARTNER MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="partnerModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closePartnerModal" aria-label="Close dialog">✕</button>
+
+      <span class="badge-sanskrit" style="margin-bottom: 8px;">Temple Administration Desk</span>
+      <h3 style="font-size: 1.5rem; color: var(--color-maroon-dark); margin-bottom: 12px;">
+        Partner Your Temple With GharSePuja
+      </h3>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 20px;">
+        Connect with our founders and onboarding team to discuss digital seva scheduling, transparent donation workflows, and prasad fulfillment.
+      </p>
+
+      <form id="partnerModalForm">
+        <div class="form-group">
+          <label class="form-label">Temple / Trust Name *</label>
+          <input type="text" class="form-control" placeholder="e.g. Shri Someshwar Mahadev Mandir" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label">Location (City, State) *</label>
+            <input type="text" class="form-control" placeholder="e.g. Ujjain, MP" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Authorized Contact Person *</label>
+            <input type="text" class="form-control" placeholder="e.g. Mahant Sharma" required>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label">Phone / WhatsApp Number *</label>
+            <input type="tel" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" placeholder="trust@temple.org">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Services your temple would like to digitize:</label>
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" checked> Live Darshan Stream</label>
+            <label class="checkbox-item"><input type="checkbox" checked> Puja & Abhishek Seva</label>
+            <label class="checkbox-item"><input type="checkbox" checked> Consecrated Prasad Logistics</label>
+            <label class="checkbox-item"><input type="checkbox"> Devotee Donations & Annadanam</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Submit Temple Partnership Inquiry
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
